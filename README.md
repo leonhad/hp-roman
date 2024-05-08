@@ -1,4 +1,4 @@
-# HP Roman
+# HP Roman charset support
 
 This project aims to add the HP Roman charset support to Java.
 
