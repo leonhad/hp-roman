@@ -19,11 +19,14 @@ To use it, just add the package to your project. This will add support to the ch
 
 * roman8
 * IBM1051
+* IBM-1051
 * cp1051
 * cp-1051
 * hp-roman8
 * HP_ROMAN8
 * ROMAN8
+* r8
+* R8
 
 ### HP Roman 8 extensions
 
