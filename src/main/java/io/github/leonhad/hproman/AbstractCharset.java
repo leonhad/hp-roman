@@ -1,4 +1,4 @@
-package com.github.leonhad.hproman;
+package io.github.leonhad.hproman;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
