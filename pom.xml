@@ -5,7 +5,7 @@
     <groupId>io.github.leonhad</groupId>
     <artifactId>hp-roman</artifactId>
     <version>1.0.0</version>
-    <name>hp-roman</name>
+    <name>HP Roman</name>
     <description>HP Roman Java charset support (version 8, 9 and 8 variations 1 and 2)</description>
     <url>https://github.com/leonhad/hp-roman</url>
     <inceptionYear>2009</inceptionYear>
