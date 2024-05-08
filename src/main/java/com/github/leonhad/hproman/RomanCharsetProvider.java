@@ -13,7 +13,6 @@ package com.github.leonhad.hproman;
 import java.nio.charset.Charset;
 import java.nio.charset.spi.CharsetProvider;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -22,7 +21,7 @@ import java.util.List;
  */
 public class RomanCharsetProvider extends CharsetProvider {
 
-    private static final List<Charset> CHARSET_LIST = Arrays.asList(new Roman8Charset(), new Roman8v1Charset());
+    private static final List<Charset> CHARSET_LIST = Arrays.asList(new Roman8Charset(), new Roman8v1Charset(), new Roman9Charset());
 
     /**
      * Creates a new instance.
