@@ -25,8 +25,18 @@ public abstract class AbstractCharset extends Charset {
         super(canonicalName, aliases);
     }
 
+    /**
+     * Gets the table.
+     *
+     * @return the table.
+     */
     protected abstract char[] getTable();
 
+    /**
+     * Gets the lookup table.
+     *
+     * @return the lookup table.
+     */
     protected abstract Map<Character, Byte> getLookupTable();
 
     @Override
