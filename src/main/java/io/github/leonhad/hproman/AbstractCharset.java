@@ -41,7 +41,7 @@ public abstract class AbstractCharset extends Charset {
 
     @Override
     public boolean contains(Charset cs) {
-        return cs.name().equals("roman8");
+        return cs.name().equals(this.name()) || aliases().contains(cs.name());
     }
 
     @Override
