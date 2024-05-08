@@ -4,7 +4,7 @@ I'm really glad you're reading this, because we need volunteer developers to hel
  
 ## Submitting changes
 
-Please send a [GitHub Pull Request to paradoxdriver](https://github.com/leonhad/paradoxdriver/pull/new/main) with a clear list of what you've done. Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).
+Please send a [GitHub Pull Request to hp-roman](https://github.com/leonhad/cp867/pull/new/main) with a clear list of what you've done. Please follow our coding conventions (below) and make sure all of your commits are atomic (one feature per commit).
 
 Always write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:
 
