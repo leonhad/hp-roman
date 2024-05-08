@@ -12,45 +12,32 @@ package com.github.leonhad.hproman;
 
 import java.nio.charset.Charset;
 import java.nio.charset.spi.CharsetProvider;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 /**
- * The HP Roman 8 charset provider.
+ * The HP Roman charset provider.
  */
-public class Roman8CharsetProvider extends CharsetProvider {
+public class RomanCharsetProvider extends CharsetProvider {
 
-    private static final Charset ROMAN_8 = new Roman8Charset();
-    private static final List<Charset> ROMAN8_LIST = Collections.singletonList(ROMAN_8);
+    private static final List<Charset> CHARSET_LIST = Arrays.asList(new Roman8Charset(), new Roman8v1Charset());
 
     /**
      * Creates a new instance.
      */
-    public Roman8CharsetProvider() {
+    public RomanCharsetProvider() {
         super();
-    }
-
-    /**
-     * Gets the HP Roman 8 charset.
-     *
-     * @return the HP Roman 8 charset.
-     */
-    public static Charset roman8() {
-        return ROMAN_8;
     }
 
     @Override
     public Iterator<Charset> charsets() {
-        return ROMAN8_LIST.iterator();
+        return CHARSET_LIST.iterator();
     }
 
     @Override
     public Charset charsetForName(String charsetName) {
-        if (charsetName.equals(ROMAN_8.name()) || ROMAN_8.aliases().contains(charsetName)) {
-            return ROMAN_8;
-        }
-
-        return null;
+        return CHARSET_LIST.stream().filter(c -> charsetName.equals(c.name()) || c.aliases().contains(charsetName)).findAny().orElse(null);
     }
 }

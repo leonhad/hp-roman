@@ -17,9 +17,9 @@ import java.util.Map;
 /**
  * The Roman8 charset.
  */
-public class Roman8Charset extends AbstractCharset {
+public class Roman8v1Charset extends AbstractCharset {
 
-    // Source: https://datatracker.ietf.org/doc/html/rfc1345
+    // Source: https://en.wikipedia.org/wiki/HP_Roman
     private static final char[] TABLE = {
             '\u0000', '\u0001', '\u0002', '\u0003', '\u0004', '\u0005', '\u0006', '\u0007', '\u0008', '\t', '\n', '\u000B', '\u000C', '\r', '\u000E', '\u000F', // 0x00
             '\u0010', '\u0011', '\u0012', '\u0013', '\u0014', '\u0015', '\u0016', '\u0017', '\u0018', '\u0019', '\u001A', '\u001B', '\u001C', '\u001D', '\u001E', '\u001F', // 0x10
@@ -29,8 +29,8 @@ public class Roman8Charset extends AbstractCharset {
             'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', '^', '_', // 0x50
             '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', // 0x60
             'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '{', '|', '}', '~', '▒', // 0x70
-            '\u0080', '\u0081', '\u0082', '\u0083', '\u0084', '\u0085', '\u0086', '\u0087', '\u0088', '\u0089', '\u008A', '\u008B', '\u008C', '\u008D', '\u008E', '\u008F', // 0x80
-            '\u0090', '\u0091', '\u0092', '\u0093', '\u0094', '\u0095', '\u0096', '\u0097', '\u0098', '\u0099', '\u009A', '\u009B', '\u009C', '\u009D', '\u009E', '\u009F', //0x90
+            '◄', '▲', '▼', '►', '╝', '╗', '╔', '╚', '╣', '╩', '╦', '╠', '═', '║', '╬', '♦', // 0x80
+            '↑', '▀', '▄', '↓', '┘', '┐', '┌', '└', '┤', '┴', '┬', '├', '─', '│', '┼', '█', //0x90
             '\u00A0', 'À', 'Â', 'È', 'Ê', 'Ë', 'Î', 'Ï', '´', '‵', '∧', '¨', '∼', 'Ù', 'Û', '₤', // 0xA0
             '¯', 'Ý', 'ý', '°', 'Ç', 'ç', 'Ñ', 'ñ', '¡', '¿', '¤', '£', '¥', '§', 'ƒ', '¢', // 0xB0
             'â', 'ê', 'ô', 'û', 'á', 'é', 'ó', 'ú', 'à', 'è', 'ò', 'ù', 'ä', 'ë', 'ö', 'ü', // 0xC0
@@ -63,8 +63,8 @@ public class Roman8Charset extends AbstractCharset {
     /**
      * Creates a new instance.
      */
-    public Roman8Charset() {
-        super("roman8", new String[]{"IBM1051", "cp1051", "cp-1051", "IBM-1051", "hp-roman8", "HP_ROMAN8", "ROMAN8", "cp1050", "cp-1050", "IBM1050", "IBM-1050"});
+    public Roman8v1Charset() {
+        super("roman8-v1", new String[]{"hp-roman8-v1", "HP_ROMAN8_V1", "ROMAN8_V1"});
     }
 
     @Override
