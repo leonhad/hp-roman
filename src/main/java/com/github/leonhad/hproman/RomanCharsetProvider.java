@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class RomanCharsetProvider extends CharsetProvider {
 
-    private static final List<Charset> CHARSET_LIST = Arrays.asList(new Roman8Charset(), new Roman8v1Charset(), new Roman9Charset());
+    private static final List<Charset> CHARSET_LIST = Arrays.asList(new Roman8Charset(), new Roman8v1Charset(), new Roman8v2Charset(), new Roman9Charset());
 
     /**
      * Creates a new instance.
