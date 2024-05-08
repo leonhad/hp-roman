@@ -8,8 +8,19 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CoderResult;
 import java.util.Map;
 
+/**
+ * Abstract charset support.
+ *
+ * @since 1.0.0
+ */
 public abstract class AbstractCharset extends Charset {
 
+    /**
+     * Creates a new instance.
+     *
+     * @param canonicalName the charset canonical name.
+     * @param aliases       the charset alias list.
+     */
     protected AbstractCharset(String canonicalName, String[] aliases) {
         super(canonicalName, aliases);
     }
