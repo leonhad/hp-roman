@@ -69,13 +69,13 @@ If you're using Maven, you can use the dependencies below:
 <dependency>
     <groupId>io.github.leonhad</groupId>
     <artifactId>hp-roman</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
 If you're using Gradle, add the following line to your dependencies section:
 
-    compile 'io.github.leonhad:hp-roman:1.0.0'
+    compile 'io.github.leonhad:hp-roman:1.0.1'
 
 If you just want the files, you can grab the [latest release](https://github.com/leonhad/hp-roman/releases/latest).
 
