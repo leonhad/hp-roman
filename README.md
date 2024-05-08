@@ -86,7 +86,7 @@ For more licensing information, see
 <http://www.gnu.org/licenses/gpl-faq.html>.
 
 -----
-Copyright (C) 2012 Leonardo Alves da Costa.
+Copyright (C) 2024 Leonardo Alves da Costa.
 
 Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright
